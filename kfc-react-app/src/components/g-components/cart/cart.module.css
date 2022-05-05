@@ -1,0 +1,117 @@
+#cartdiv1{
+    border:solid red 1px;
+    display: flex;margin: auto 5%;
+    background-color: #f8f7f5;
+    height: 600px;
+}
+#cartdiv2{
+    border:solid red 1px;
+    display: flex;margin: auto 5%;
+}
+#items{
+    width: 60%;
+    border: solid black 1px;
+    padding: 0px 10px;
+}
+#subtotal{
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 52px;
+    height: 400px;
+    padding: 5%;
+}
+#subtotal h1{
+    margin-top: -15px;
+}
+.bag_hope{
+    margin: 20px 0px;
+}
+#R_all{
+    display: flex;
+    justify-content: space-between;
+    /* margin: auto 5%; */
+}
+#R_all div{
+    border: solid black 1px; 
+    padding: 10px  50px;
+    border-radius: 25px;
+    /* margin-right: 30px; */
+    cursor: pointer;
+}
+#R_all div:hover{
+background-color: black;
+color: white;
+}
+#cartdiv11{
+    /* border: solid black 1px; */
+    padding-left: 10%;
+    padding-top: 100px;
+    width:50%;
+}
+#cartdiv11 h1{
+    width: 70%;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: National 2 condensed;
+}
+.cdTop{
+    margin: auto 5%;
+}
+#startbtn{
+    background-color: #e4002b;
+    color: white;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 20px;
+}
+.singlediv{
+    display: flex;
+    justify-content: space-between;
+}
+#faqDiv{
+    display: flex;
+    justify-content: space-between;
+      border-top: solid gray 2px;
+      margin: 2% 5%;
+
+}
+#faqDiv > div:first-child{
+    /* border: solid black 1px; */
+    width: 48%;
+    padding-left: 10px;
+}
+#faqDiv > div:first-child div{
+    border-bottom: solid gray 2px;
+    margin-top: 50px;
+}
+#faqDiv > div:last-child{
+    /* border: solid black 1px; */
+    width: 45%;
+    
+}
+
+#haveQ{
+    display: flex;
+}
+#haveQ div{
+    border: solid black 1px; 
+    padding: 10px  50px;
+    border-radius: 25px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+#checkoutbtn{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e4002b;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+#checkoutbtn p{
+    margin: 0px;
+}
+

@@ -1,0 +1,33 @@
+#frame{
+    border: solid red 1px;
+    display: flex;
+    padding: 5px;
+    width: 55%;
+    background-color: #f8f7f5;
+
+}
+#centerDiv{
+width: 390px;
+margin-left: 15px;
+}
+#frame div:first-child img{
+    height: 120px;
+    width: 150px;
+}
+#priceandqty{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* padding-bottom: 35px; */
+    border: solid black 1px;
+    margin: 10px;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
