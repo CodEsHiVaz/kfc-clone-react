@@ -1,9 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { PaymentMethod } from "../paymentMethod/PaymentMethod";
 import styles from "./checkout.module.css";
 import { Popup } from "../paymentMethod/Popup";
+import { useNavigate } from "react-router-dom";
+
 export const Checkout = () => {
-  const [payMth,setpayMth] = useState(false)
+  
+  const [payMth, setpayMth] = useState(false);
+  const [formdata, setformdata] = useState({});
+  const [payType, setpayType] = useState("");
+  const [showbtn, setshowbtn] = useState(false);
+  const navigate = useNavigate();
+
+  const handlechange = (e) => {
+    let key = e.target.name;
+    setformdata({
+      ...formdata,
+      [key]: e.target.value,
+    });
+    console.log(payType, formdata);
+  };
+  useEffect(() => {
+    if (payType && formdata) {
+      console.log("show button true");
+      setshowbtn(true);
+    }
+  }, [payMth]);
+
+  const handleCheckout = () => navigate("/payment");
+
   return (
     <>
       <div className={styles.headdiv}>
@@ -14,7 +39,7 @@ export const Checkout = () => {
         <div id={styles.heading}>
           <h1>CheckOut</h1>
           <div>
-            <i class="fa-solid fa-lock"></i> Secure Checkout
+            <i className="fa-solid fa-lock"></i> Secure Checkout
           </div>
         </div>
       </div>
@@ -26,15 +51,14 @@ export const Checkout = () => {
             </div>
             <div>
               <div id={styles.store}>
-                <i class="fa-solid fa-location-dot"></i>
+                <i className="fa-solid fa-location-dot"></i>
                 <p>Store name</p>
                 <div>
-                  {" "}
-                  <i class="fa-solid fa-clock"></i> ASAP
+                  <i className="fa-solid fa-clock"></i> ASAP
                 </div>
               </div>
               <div>
-                <p>Change</p>
+                <p className={styles.addpM}>Change</p>
               </div>
             </div>
           </div>
@@ -54,46 +78,51 @@ export const Checkout = () => {
               </div>
             </div>
             <div>
-                <p>Note: * Indicates required field</p>
+              <p>Note: * Indicates required field</p>
               <input
                 type="text"
                 placeholder="Full Name*"
-                value={""}
-                onClick={""}
+                name="full_name"
+                onChange={handlechange}
                 className={styles.inp}
               />
               <br />
               <input
                 type="number"
                 placeholder="Phone Number*"
-                value={""}
-                onClick={""}
+                name="phone_no"
+                onChange={handlechange}
                 className={styles.inp}
               />
               <br />
               <input
                 type="email"
                 placeholder="Email*"
-                value={""}
-                onClick={""}
+                name="email"
+                onChange={handlechange}
                 className={styles.inp}
               />
               <br />
-              <input style={{marginTop:"15px"}} type="checkbox" value={""} onClick={""} /> I want to know
-              about the cool stuff at KFC on Email & SMS (I know I can
-              unsubscribe anytime).
+              <input
+                style={{ marginTop: "15px" }}
+                type="checkbox"
+                name="update"
+                onChange={handlechange}
+              />
+              I want to know about the cool stuff at KFC on Email & SMS (I know
+              I can unsubscribe anytime).
             </div>
           </div>
           <div className={styles.paymentdiv}>
-              <div>
-                  <h1>PEYMENT</h1>
-              </div>
-              <div onClick={()=>setpayMth(true)}>
-                  <p>Add payment method</p>
-              </div>
-              <Popup trigger={true}>
-                 <PaymentMethod/>
-              </Popup>
+            <div>
+              <h1>PEYMENT</h1>
+            </div>
+            <div onClick={() => setpayMth(true)}>
+              <p className={styles.addpM}>Add payment method</p>
+            </div>
+            <Popup trigger={payMth} setpayMth={setpayMth}>
+              <PaymentMethod setpayMth={setpayMth} setpayType={setpayType} />
+            </Popup>
           </div>
         </div>
         <div className={styles.Cright}>
@@ -103,17 +132,24 @@ export const Checkout = () => {
             <p>₹199.05</p>
           </div>
           <div className={styles.priceLine}>
-          <p>GST</p>
+            <p>GST</p>
             <p>₹9</p>
           </div>
           <div className={styles.priceLine}>
-          <p>Large Carry Bag</p>
+            <p>Large Carry Bag</p>
             <p>₹6</p>
           </div>
-          <div id={styles.paybtn}> 
-          <p>Continue to Payment</p>
-            <p>₹201</p>
-          </div>
+          {showbtn ? (
+            <div id={styles.paybtn} onClick={handleCheckout}>
+              <p>Continue to Payment</p>
+              <p>₹201</p>
+            </div>
+          ) : (
+            <div id={styles.paybtn}>
+              <p>Continue to Payment</p>
+              <p>₹201</p>
+            </div>
+          )}
         </div>
       </div>
     </>

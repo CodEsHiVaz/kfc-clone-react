@@ -1,23 +1,22 @@
 #cartdiv1{
-    border:solid red 1px;
+    /* border:solid red 1px; */
     display: flex;margin: auto 5%;
     background-color: #f8f7f5;
     height: 600px;
 }
 #cartdiv2{
-    border:solid red 1px;
+    /* border:solid red 1px; */
     display: flex;margin: auto 5%;
 }
 #items{
     width: 60%;
-    border: solid black 1px;
-    padding: 0px 10px;
+    /* border: solid black 1px; */
 }
 #subtotal{
     width: 25%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-left: 52px;
-    height: 400px;
+    height: fit-content;
     padding: 5%;
 }
 #subtotal h1{

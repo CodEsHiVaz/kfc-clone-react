@@ -1,9 +1,10 @@
 #frame{
-    border: solid red 1px;
+    /* border: solid red 1px; */
     display: flex;
     padding: 5px;
-    width: 55%;
+    width: 98%;
     background-color: #f8f7f5;
+    margin: 15px 0px;
 
 }
 #centerDiv{

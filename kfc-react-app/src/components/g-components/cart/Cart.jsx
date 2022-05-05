@@ -1,7 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./cart.module.css";
+import {CartCard} from "../cartcard/CartCard"
+import { useNavigate } from "react-router-dom";
+
+const dummyData = [
+  {
+    image:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000110.jpg",
+    title:"Strips & Popcorn Treat",
+    price:366,
+    id:"gali1"
+  },
+  {
+    image:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000110.jpg",
+    title:"dummy",
+    price:199,
+    id:"gali2"
+  }
+]
 
 export default function Cart() {
+  const [cartData, setcartData] = useState([]);
+  const navigate = useNavigate();
+ 
+  useEffect(()=>{
+    
+    setcartData(dummyData) 
+ 
+  },[cartData]);
+
+  let subtotal;
+  if(cartData.length==0){
+    subtotal=0;
+  }else{
+    subtotal = cartData.reduce((acc,elem)=>{return acc+=elem.price},0)
+  }
+  
+
   return (
     <>
       <div className={styles.cdTop}>
@@ -13,49 +47,60 @@ export default function Cart() {
         </div>
         <h1>MY CART</h1>
       </div>
-      {/* <div id={styles.cartdiv1}>
-        {either emptydiv or data div}
-        <div id={styles.cartdiv11}>
-       <h1>YOUR CART IS EMPTY. LET'S START AN ORDER!</h1>
-       <button id={styles.startbtn}>Start Order</button>
-       </div>
-       <div> <img src="https://online.kfc.co.in/static/media/empty_cart.32f17a45.png" alt="kfcCup" /></div>
-        when not empty
-      </div> */}
-      <div id={styles.cartdiv2}>
-        <div id={styles.items}>
-          <h1>hello world</h1>
-          <div id={styles.R_all}>
-            <div>Remove All</div>
-            <div>Add More Menu</div>
+      {/* conditional rendering when empty it will show */}
+      {cartData.length == 0 ? (
+        <div id={styles.cartdiv1}>
+          <div id={styles.cartdiv11}>
+            <h1>YOUR CART IS EMPTY. LET'S START AN ORDER!</h1>
+            <button id={styles.startbtn}>Start Order</button>
+          </div>
+          <div>
+            {" "}
+            <img
+              src="https://online.kfc.co.in/static/media/empty_cart.32f17a45.png"
+              alt="kfcCup"
+            />
           </div>
         </div>
-        <div id={styles.subtotal}>
-          <h1>1item</h1>
-          <div>Offer Apply promo code</div>
-          <div className="">
-            <div className={styles.singlediv}>
-              <p>subtotal</p>
-              <p>199</p>
-            </div>
-            <div className={styles.singlediv}>
-              <p>GST</p>
-              <p>19</p>
+      ) : (
+        <div id={styles.cartdiv2}>
+          <div id={styles.items}>
+            {/* **********************************maping data ************* */}
+            {cartData.map((elem)=><CartCard key={elem.id} {...elem}/>)}
+            
+            <div id={styles.R_all}>
+              <div onClick={()=>setcartData("")}>Remove All</div>
+              <div onClick={()=>navigate("/menu")}>Add More Menu</div>
             </div>
           </div>
-          <div className={styles.bag_hope}>
-            <input type="checkbox" /> ₹6.00 Tick to add a large carry bag.
-          </div>
-          <div className={styles.bag_hope}>
-            <input type="checkbox" /> Donate ₹5.00 Tick to Add Hope.
-          </div>
+          <div id={styles.subtotal}>
+            <h1>{cartData.length}- ITEMS</h1>
+            <div>Offer Apply promo code</div>
+            <div className="">
+              <div className={styles.singlediv}>
+                <p>subtotal</p>
+                <p>₹ {subtotal}</p>
+              </div>
+              <div className={styles.singlediv}>
+                <p>GST</p>
+                <p>₹ 19</p>
+              </div>
+            </div>
+            <div className={styles.bag_hope}>
+              <input type="checkbox" /> ₹ 6.00 Tick to add a large carry bag.
+            </div>
+            <div className={styles.bag_hope}>
+              <input type="checkbox" /> Donate ₹ 5.00 Tick to Add Hope.
+            </div>
 
-          <div id={styles.checkoutbtn}>
-            <p>Check Out</p>
-            <p>199</p>
+            <div id={styles.checkoutbtn} onClick={()=>navigate("/checkout")}>
+              <p>Check Out</p>
+              <p>{subtotal+19}</p>
+            </div>
           </div>
         </div>
-      </div>
+      )}
+
       <div id={styles.faqDiv}>
         <div>
           <div>
