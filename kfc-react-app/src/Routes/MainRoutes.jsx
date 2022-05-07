@@ -15,7 +15,7 @@ export const MainRoutes = () => {
       <Route path="/cartcard" element={<CartCard />}></Route>
       <Route path="/checkout" element={<Checkout />}></Route>
       <Route path="/paymentmethod" element={<PaymentMethod />}></Route>
-     
+      <Route path="/Signin" element={<Signin />}></Route>
     </Routes>
   );
 };

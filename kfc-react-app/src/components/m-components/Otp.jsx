@@ -10,7 +10,7 @@ export const Otp =()=>{
 
 
 
-    //  let Reload_mama_earth=()=>{location.href="mamaearthotp.html"}
+   
     //  let backtosignin=()=>{location.href="signin.html"}
     //  var userDataBase = JSON.parse(localStorage.getItem("userDataBase")) || [];
      

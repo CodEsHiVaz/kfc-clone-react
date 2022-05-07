@@ -35,9 +35,14 @@ export const Signin =()=>{
 //      document.querySelector(".last").addEventListener("click",()=>{
 //          window.location.href="/index.html"
 //      })
+const [number,setnumber]=useState("")
+let handlechange=(e)=>{
+    setnumber(e.target.value)
+    console.log(e.target.value)}
 
-
-
+    let sendmecode=()=>{
+        console.log(number)
+    }
 
 return(
     <div id={styles.centre}>
@@ -50,7 +55,7 @@ return(
         <div className={styles.siocawp}>LET’S SIGN IN OR CREATE ACCOUNT WITH YOUR PHONE NUMBER!</div>
 
        
-            <input  className={styles.phoneNumberId} id="phone" type="number" placeholder="Phone Number*" maxlength="10" />
+            <input  className={styles.phoneNumberId} id="phone" type="number" onChange={handlechange} placeholder="Phone Number*"  />
         <div className={styles.privacypolicy}>By “logging in to KFC”, you agree to our 
             <a href="https://online.kfc.co.in/privacyPolicy"><b> Privacy Policy </b></a>
              and 
@@ -58,7 +63,7 @@ return(
              .</div>
 
              <div class={styles.btnDiv}>
-            <button id="btnSendCode" class={styles.btnSendCode} >Send Me a Code</button>
+            <button id="btnSendCode" class={styles.btnSendCode} onClick={sendmecode} >Send Me a Code</button>
         </div> 
         <div class={styles.orDiv}>
                 <div class={styles.orLeft}></div>
