@@ -1,0 +1,37 @@
+.Spop{
+    background-color: white;
+
+}
+.headdiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+.headdiv button{
+    border: none;
+    font-size: 30px;
+    background-color: transparent;
+}
+.headdiv i{
+    font-size: 30px;
+}
+.searchInp{
+    display: flex;
+    align-items: center;
+    /* border: solid red 1px; */
+    margin: 50px;
+}
+.searchInp i{
+    position: absolute;
+    margin-left: 30px;
+    color: red;
+}
+.searchInp input{
+    width: 100%;
+    /* height: 30px; */
+    border-radius: 20px;
+    padding: 10px 20px;
+    padding-left: 50px;
+    font-size: 18px;
+}

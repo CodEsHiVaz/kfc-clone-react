@@ -57,7 +57,8 @@
     margin-bottom: auto;
     width: 50px;
     height: 50px;
-    padding-left: 10px
+    padding-left: 10px;
+    cursor: pointer;
 }
 .fordigit{
     margin-top: auto;
@@ -79,6 +80,7 @@
     padding-left: 30px;
     padding-right: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #cartitems{

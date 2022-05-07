@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../Secblack/secblac.module.css";
 import {Popup} from '../../g-components/paymentMethod/Popup'
+import { Search_store } from "../Serach store/Search_store";
 const Secblack = () => {
   const [activePopup,setactivePopup] = useState(false)
   return (
@@ -10,8 +11,7 @@ const Secblack = () => {
       </h4>
       <button onClick={()=>setactivePopup(true) } className={styles.secblackbut}>Start Order</button>
       <Popup trigger = {activePopup}>
-        <h1>hello brother</h1>
-        <button onClick={()=>setactivePopup(false)}>X</button>
+        <Search_store setactivePopup={setactivePopup}/>
       </Popup>
     </div>
   );
