@@ -1,0 +1,100 @@
+#centre{
+    
+    margin: 5vw 33vw;
+}
+
+
+
+.header {
+    text-align: center;
+    margin: auto;
+    display: block;
+    color: #494949;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'National2-Medium';
+    margin-bottom: 7%;
+    margin-top: 100px;
+}
+.logoimg{
+    margin-left: 43%;
+    margin-bottom: 40px;
+}
+.siocawp{
+    text-align: center;
+    font-family: 'National2CondensedWeb-Medium';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #202124;
+    margin-bottom: 7%;
+    
+}
+
+.displayPhoneNumber{
+text-align: center;
+margin-bottom: 20px;
+
+
+}
+
+
+.differentNumber {
+    font-family: 'National2-Medium';
+    color: #494949;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+.otp{
+    border: none;
+    text-align: left;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #202124;
+    outline: none;
+    font-family: 'National 2 Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #202124;
+    padding-bottom: 0.7%;
+    position: relative;
+    margin-top: 40px;
+}
+
+.skipBtn {
+    width: 40%;
+    background: #ffffff;
+    color: #202124;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    outline: none;
+    border-radius: 66px;
+    border: 1px solid #202124;
+    font-family: 'National 2 Regular';
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 29%;
+}

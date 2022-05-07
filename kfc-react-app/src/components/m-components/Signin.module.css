@@ -1,0 +1,119 @@
+#centre{
+    
+    margin: 5vw 33vw;
+}
+
+
+
+.header {
+    text-align: center;
+    margin: auto;
+    display: block;
+    color: #494949;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'National2-Medium';
+    margin-bottom: 7%;
+}
+.logoimg{
+    margin-left: 43%;
+    margin-bottom: 40px;
+}
+.siocawp{
+    text-align: center;
+    font-family: 'National2CondensedWeb-Medium';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #202124;
+    margin-bottom: 7%;
+}
+
+.phoneNumberId {
+    border: none;
+    text-align: left;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #202124;
+    outline: none;
+    font-family: 'National 2 Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #202124;
+    padding-bottom: 0.7%;
+    position: relative;
+    margin-top: 40px;
+}
+.privacypolicy{
+    font-family: 'National 2 Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #202124;
+    margin-top: 30px;
+}
+.btnSendCode {
+    height: 44px;
+    padding: 10px 40px;
+    color: #ffffff;
+    font-size: 13px;
+    background-color: #202124;
+    border: none;
+    outline: none;
+    border-radius: 200px;
+    cursor: pointer;
+}
+.btnDiv {
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+.orDiv {
+    display: flex;
+    margin: 5% 0;
+}
+.orCenter {
+    margin: 0 4%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #202124;
+    font-family: 'National 2 Regular';
+}
+.orLeft, .orRight {
+    width: 100%;
+    border-top: 1px solid #000000;
+    margin-top: 10px;
+    opacity: 0.1;
+}
+.skipBtnDiv {
+    margin-top: 3%;
+    text-align: center;
+}
+.skipBtn {
+    width: 100%;
+    background: #ffffff;
+    color: #202124;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    outline: none;
+    border-radius: 66px;
+    border: 1px solid #202124;
+    font-family: 'National 2 Regular';
+    padding: 8px 40px;
+    cursor: pointer;
+}

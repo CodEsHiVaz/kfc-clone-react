@@ -4,6 +4,8 @@ import Cart from "../components/g-components/cart/Cart";
 import { CartCard } from "../components/g-components/cartcard/CartCard";
 import { Checkout } from "../components/g-components/Checkout/Checkout";
 import { PaymentMethod } from "../components/g-components/paymentMethod/PaymentMethod";
+import { Otp } from "../components/m-components/Otp";
+import { Signin } from "../components/m-components/Signin";
 
 export const MainRoutes = () => {
   return (
@@ -13,6 +15,7 @@ export const MainRoutes = () => {
       <Route path="/cartcard" element={<CartCard />}></Route>
       <Route path="/checkout" element={<Checkout />}></Route>
       <Route path="/paymentmethod" element={<PaymentMethod />}></Route>
+     
     </Routes>
   );
 };
