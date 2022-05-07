@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import styles from "../navbar/Navbar.module.css";
 import Secblack from "../Secblack/Secblack"
 const Navbar = () => { 
+
+  
   const data = useSelector((state) => state.cartdata.cartdata);
   const items = data.reduce((acc, elem) => {
     return (acc += elem.qty);

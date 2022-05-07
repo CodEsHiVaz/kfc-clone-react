@@ -64,7 +64,6 @@ const Footer = () => {
           <a
             className={styles.link}
             target="#"
-            tabindex="0"
             href="https://restaurants.kfc.co.in/"
           >
             Find a KFC
