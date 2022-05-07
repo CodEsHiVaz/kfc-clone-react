@@ -2,27 +2,3 @@
   text-align: center;
 }
 
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-
-.App-link {
-  color: #61dafb;
-}
-
-
-.address{
-  border: 2px solid red;
-  width: 100%;
-  background-color: red;
-  height: 150px;
-  color: blue;
-}
-.address>h1{
-  color: green;
-}
