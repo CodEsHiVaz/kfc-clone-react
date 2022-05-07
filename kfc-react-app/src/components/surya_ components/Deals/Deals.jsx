@@ -4,7 +4,7 @@ export const Deals = () => {
   return (
     <div className="address">
       <div className="banner">
-      <div class="deals-image-text">Deals &amp; Offers</div>
+      <div class="deals-image-text">DEALS & OFFERS</div>
       </div>
 
       <div className="stripes">

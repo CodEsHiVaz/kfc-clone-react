@@ -3,13 +3,15 @@ import { PaymentMethod } from "../paymentMethod/PaymentMethod";
 import styles from "./checkout.module.css";
 import { Popup } from "../paymentMethod/Popup";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { RemoveAll } from "../../../redux/guddu/cartRedux/CartAction";
 
 export const Checkout = () => {
   const [payMth, setpayMth] = useState(false);
   const [formdata, setformdata] = useState({});
   const [payType, setpayType] = useState("");
   const [showbtn, setshowbtn] = useState(false);
+  const dispatch = useDispatch()
   const navigate = useNavigate();
   const data = useSelector((state) => state.cartdata.cartdata);
   let subtotal = data.reduce((acc, elem) => {
@@ -34,7 +36,10 @@ export const Checkout = () => {
     }
   }, [payMth]);
 
-  const handleCheckout = () => navigate("/ordered");
+  const handleCheckout = () =>{
+    navigate("/ordered");
+    dispatch(RemoveAll());
+  } 
 
   return (
     <>

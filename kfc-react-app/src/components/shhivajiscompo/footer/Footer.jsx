@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Footer.module.css";
 const Footer = () => {
+  const navigate = useNavigate();
   const rowone = {
     display: "inline-flex",
     justifyContent: " space-evenly",
@@ -30,8 +32,8 @@ const Footer = () => {
           <div>
             <ul className={styles.ultag}>
               <li className={styles.lis}>Support</li>
-              <li className={styles.lis}>Get Help</li>
-              <li className={styles.lis}>Contact Us</li>
+              <li  className={styles.lis}>Get Help</li>
+              <li onClick={()=>navigate("/contactUs")} className={styles.lis}>Contact Us</li>
               <li className={styles.lis}>KFC Feedback</li>
             </ul>
           </div>
@@ -47,7 +49,7 @@ const Footer = () => {
           <div>
             <ul className={styles.ultag}>
               <li className={styles.lis}>KFC India</li>
-              <li className={styles.lis}>About KFC</li>
+              <li onClick={()=>navigate("/about")} className={styles.lis}>About KFC</li>
               <li className={styles.lis}>KFC Care</li>
               <li className={styles.lis}>Careers</li>
               <li className={styles.lis}>Our Golden Past</li>

@@ -5,26 +5,16 @@
   height: 790px;
 }
 .banner {
- 
   width: 100%;
   background-image: url("https://online.kfc.co.in/static/media/offer_deals_banner.777f20e1.svg");
   height: 250px;
 }
 .deals-image-text {
-    font-family: National 2 Condensed;
     color: white;
-    font-style: normal;
     font-weight: 700;
     font-size: 74px;
-    line-height: 78px;
     text-align: center;
     letter-spacing: 2px;
-    text-transform: uppercase;
-    margin: auto;
-    position: absolute;
-     top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 .stripes {
   margin-left: 250px;
