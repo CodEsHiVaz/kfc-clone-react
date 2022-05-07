@@ -125,7 +125,7 @@ export default function Cart() {
           </div>
         </div>
         <div>
-          <div>
+          <div id={styles.still}>
             <h2>STILL HAVE A QUESTION?</h2>
           </div>
           <div id={styles.haveQ}>

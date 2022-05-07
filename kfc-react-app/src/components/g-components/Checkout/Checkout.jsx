@@ -60,7 +60,6 @@ export const Checkout = () => {
               <div id={styles.store}>
                 <i className="fa-solid fa-location-dot"></i>
                 <p>
-                  {" "}
                   <span>KFC Mumbai</span> - Hill Road Bandra 400050, Saint John
                   Baptist Road, near Federal Bank, Mount Mary, Bandra West,
                   Mumbai, Maharashtra, India
@@ -120,8 +119,8 @@ export const Checkout = () => {
                 type="checkbox"
                 name="update"
                 onChange={handlechange}
-              />
-              I want to know about the cool stuff at KFC on Email & SMS (I know
+              /> 
+                I want to know about the cool stuff at KFC on Email & SMS (I know
               I can unsubscribe anytime).
             </div>
           </div>

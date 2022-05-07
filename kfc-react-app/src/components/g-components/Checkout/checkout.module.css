@@ -13,8 +13,6 @@
 #Cmain {
   display: flex;
   justify-content: space-between;
-  /* border: solid black 1px; */
-  height: 200px;
   margin: auto 15%;
 }
 
@@ -36,6 +34,10 @@
   width: 33%;
   margin-top: 20px;
   padding: 20px;
+}
+.Cright div{
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .pickupdiv {
   display: flex;
