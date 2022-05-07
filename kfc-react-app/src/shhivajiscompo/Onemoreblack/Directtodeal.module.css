@@ -1,0 +1,94 @@
+.main{
+    width: 100%;
+    height:auto;    
+    background-color:#202124;
+    /* border: solid 2px red; */
+}
+.h2{
+    font-family: National 2 Condensed;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 38px;
+    line-height: 43px;
+    font-weight: 700;
+  
+}
+.arrow{
+    
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+.cardnamesp{
+    font-weight: bold;
+    margin-top:50px;
+    font-size:13px; 
+    cursor: pointer ;
+}
+.splitbet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+}
+.lines{
+    width: 50%;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: flex-start;
+    padding-bottom: 80px;
+}
+.line{
+  height: 42px;
+  width: 16px;
+  background-color: #E4002B;
+
+}   
+.dist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    /* height: 322px; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.carcomp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 310px;
+    height: 400px;
+    background-color: #ffffff;
+    color: #E4002B;
+}
+.imgofcard{
+    width: 100%;
+}
+.btnbtn{
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color:white;
+    height: 40px;
+    width: 100px;
+    cursor: pointer ;
+ }
+.btpar{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
