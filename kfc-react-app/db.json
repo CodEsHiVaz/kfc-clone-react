@@ -1,0 +1,243 @@
+
+ [
+  {
+    "id": 1,
+    "title": "Howzzat Biryani Combo",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/md/A-33781-0.jpg?ver=14.71",
+    "mrp": "₹ 199.00"
+    ,"detail":"Large portions of Biryani & Chicken Popcorn, 2 Spicy Gravies, 4pc Wings & Pepsi PET [serves 2-3] "
+    
+  },
+  {
+    "id": 2,
+    "title": "Super 6s Bucket Meal ",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/md/A-33783-0.jpg?ver=14.71",
+    "mrp": "₹ 199.00"
+     ,"detail":"Save 21% on combo of 6 Hot & Crispy Chicken, 6 Strips, Medium Fries & Pepsi PET [serves 3] "
+    
+  },
+  {
+    "id": 3,
+    "title": "Super 4s Bucket Meal",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33784-0.jpg?ver=14.71",
+    "mrp": "₹ 120.00"
+         ,"detail":"Enjoy 4 Hot & Crispy Chicken, 4 Strips, Medium Popcorn & Pepsi PET - save Rs. 79 [serves 2-3] "
+  },
+  {
+    "id": 4,
+    "title": "Super 6s Bucket",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33785-0.jpg?ver=14.71",
+    "mrp": "₹ 185.00"
+         ,"detail":"Save Rs. 203 on combo of 6 Hot & Crispy Chicken & 6 Strips [serves 3] "
+  },
+  {
+    "id": 5,
+    "title": "Super 4s Bucket",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33786-0.jpg?ver=14.71",
+    "mrp": "₹ 449.00"
+     ,"detail":"Flat Rs. 107 off on combo of 4 Hot & Crispy Chicken & 4 Strips [serves 2] "
+    
+  },
+  {
+    "id": 6,
+    "title": "Dream Team Bucket",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33787-0.jpg?ver=14.71",
+    "mrp": "₹ 120.00"
+         ,"detail":"Leg before any wicket! Save 29% on 10 Leg Pieces & 4 Dips [serves 3-4] "
+  },
+  {
+    "id": 7,
+    "title": "5pc Leg Piece Bucket Meal",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-32775-0.jpg?ver=14.71",
+    "mrp": "₹ 225.00"
+     ,"detail":" Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a Pepsi PET [serves 2 ]"
+    
+  }  ,
+  {
+    "id": 1,
+    "title": "Howzzat Biryani Combo",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/md/A-33781-0.jpg?ver=14.71",
+    "mrp": "₹ 199.00"
+    ,"detail":"Large portions of Biryani & Chicken Popcorn, 2 Spicy Gravies, 4pc Wings & Pepsi PET [serves 2-3] "
+    
+  },
+  {
+    "id": 2,
+    "title": "Super 6s Bucket Meal ",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/md/A-33783-0.jpg?ver=14.71",
+    "mrp": "₹ 199.00"
+     ,"detail":"Save 21% on combo of 6 Hot & Crispy Chicken, 6 Strips, Medium Fries & Pepsi PET [serves 3] "
+    
+  },
+  {
+    "id": 3,
+    "title": "Super 4s Bucket Meal",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33784-0.jpg?ver=14.71",
+    "mrp": "₹ 120.00"
+         ,"detail":"Enjoy 4 Hot & Crispy Chicken, 4 Strips, Medium Popcorn & Pepsi PET - save Rs. 79 [serves 2-3] "
+  },
+  {
+    "id": 4,
+    "title": "Super 6s Bucket",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33785-0.jpg?ver=14.71",
+    "mrp": "₹ 185.00"
+         ,"detail":"Save Rs. 203 on combo of 6 Hot & Crispy Chicken & 6 Strips [serves 3] "
+  },
+  {
+    "id": 5,
+    "title": "Super 4s Bucket",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33786-0.jpg?ver=14.71",
+    "mrp": "₹ 449.00"
+     ,"detail":"Flat Rs. 107 off on combo of 4 Hot & Crispy Chicken & 4 Strips [serves 2] "
+    
+  },
+  {
+    "id": 6,
+    "title": "Dream Team Bucket",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33787-0.jpg?ver=14.71",
+    "mrp": "₹ 120.00"
+         ,"detail":"Leg before any wicket! Save 29% on 10 Leg Pieces & 4 Dips [serves 3-4] "
+  },
+  {
+    "id": 7,
+    "title": "5pc Leg Piece Bucket Meal",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-32775-0.jpg?ver=14.71",
+    "mrp": "₹ 225.00"
+     ,"detail":" Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a Pepsi PET [serves 2 ]"
+    
+  }  ,
+  {
+    "id": 1,
+    "title": "Howzzat Biryani Combo",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/md/A-33781-0.jpg?ver=14.71",
+    "mrp": "₹ 199.00"
+    ,"detail":"Large portions of Biryani & Chicken Popcorn, 2 Spicy Gravies, 4pc Wings & Pepsi PET [serves 2-3] "
+    
+  },
+  {
+    "id": 2,
+    "title": "Super 6s Bucket Meal ",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/md/A-33783-0.jpg?ver=14.71",
+    "mrp": "₹ 199.00"
+     ,"detail":"Save 21% on combo of 6 Hot & Crispy Chicken, 6 Strips, Medium Fries & Pepsi PET [serves 3] "
+    
+  },
+  {
+    "id": 3,
+    "title": "Super 4s Bucket Meal",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33784-0.jpg?ver=14.71",
+    "mrp": "₹ 120.00"
+         ,"detail":"Enjoy 4 Hot & Crispy Chicken, 4 Strips, Medium Popcorn & Pepsi PET - save Rs. 79 [serves 2-3] "
+  },
+  {
+    "id": 4,
+    "title": "Super 6s Bucket",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33785-0.jpg?ver=14.71",
+    "mrp": "₹ 185.00"
+         ,"detail":"Save Rs. 203 on combo of 6 Hot & Crispy Chicken & 6 Strips [serves 3] "
+  },
+  {
+    "id": 5,
+    "title": "Super 4s Bucket",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33786-0.jpg?ver=14.71",
+    "mrp": "₹ 449.00"
+     ,"detail":"Flat Rs. 107 off on combo of 4 Hot & Crispy Chicken & 4 Strips [serves 2] "
+    
+  },
+  {
+    "id": 6,
+    "title": "Dream Team Bucket",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33787-0.jpg?ver=14.71",
+    "mrp": "₹ 120.00"
+         ,"detail":"Leg before any wicket! Save 29% on 10 Leg Pieces & 4 Dips [serves 3-4] "
+  },
+  {
+    "id": 7,
+    "title": "5pc Leg Piece Bucket Meal",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-32775-0.jpg?ver=14.71",
+    "mrp": "₹ 225.00"
+     ,"detail":" Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a Pepsi PET [serves 2 ]"
+    
+  }  ,
+  {
+    "id": 1,
+    "title": "Howzzat Biryani Combo",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/md/A-33781-0.jpg?ver=14.71",
+    "mrp": "₹ 199.00"
+    ,"detail":"Large portions of Biryani & Chicken Popcorn, 2 Spicy Gravies, 4pc Wings & Pepsi PET [serves 2-3] "
+    
+  },
+  {
+    "id": 2,
+    "title": "Super 6s Bucket Meal ",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/md/A-33783-0.jpg?ver=14.71",
+    "mrp": "₹ 199.00"
+     ,"detail":"Save 21% on combo of 6 Hot & Crispy Chicken, 6 Strips, Medium Fries & Pepsi PET [serves 3] "
+    
+  },
+  {
+    "id": 3,
+    "title": "Super 4s Bucket Meal",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33784-0.jpg?ver=14.71",
+    "mrp": "₹ 120.00"
+         ,"detail":"Enjoy 4 Hot & Crispy Chicken, 4 Strips, Medium Popcorn & Pepsi PET - save Rs. 79 [serves 2-3] "
+  },
+  {
+    "id": 4,
+    "title": "Super 6s Bucket",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33785-0.jpg?ver=14.71",
+    "mrp": "₹ 185.00"
+         ,"detail":"Save Rs. 203 on combo of 6 Hot & Crispy Chicken & 6 Strips [serves 3] "
+  },
+  {
+    "id": 5,
+    "title": "Super 4s Bucket",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33786-0.jpg?ver=14.71",
+    "mrp": "₹ 449.00"
+     ,"detail":"Flat Rs. 107 off on combo of 4 Hot & Crispy Chicken & 4 Strips [serves 2] "
+    
+  },
+  {
+    "id": 6,
+    "title": "Dream Team Bucket",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-33787-0.jpg?ver=14.71",
+    "mrp": "₹ 120.00"
+         ,"detail":"Leg before any wicket! Save 29% on 10 Leg Pieces & 4 Dips [serves 3-4] "
+  },
+  {
+    "id": 7,
+    "title": "5pc Leg Piece Bucket Meal",
+    "imgURL":
+      "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-32775-0.jpg?ver=14.71",
+    "mrp": "₹ 225.00"
+     ,"detail":" Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a Pepsi PET [serves 2 ]"
+    
+  }  
+]
