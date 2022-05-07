@@ -3,13 +3,15 @@ import { PaymentMethod } from "../paymentMethod/PaymentMethod";
 import styles from "./checkout.module.css";
 import { Popup } from "../paymentMethod/Popup";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { RemoveAll } from "../../../redux/guddu/cartRedux/CartAction";
 
 export const Checkout = () => {
   const [payMth, setpayMth] = useState(false);
   const [formdata, setformdata] = useState({});
   const [payType, setpayType] = useState("");
   const [showbtn, setshowbtn] = useState(false);
+  const dispatch = useDispatch()
   const navigate = useNavigate();
   const data = useSelector((state) => state.cartdata.cartdata);
   let subtotal = data.reduce((acc, elem) => {
@@ -34,7 +36,10 @@ export const Checkout = () => {
     }
   }, [payMth]);
 
-  const handleCheckout = () => navigate("/ordered");
+  const handleCheckout = () =>{
+    navigate("/ordered");
+    dispatch(RemoveAll());
+  } 
 
   return (
     <>
@@ -60,7 +65,6 @@ export const Checkout = () => {
               <div id={styles.store}>
                 <i className="fa-solid fa-location-dot"></i>
                 <p>
-                  {" "}
                   <span>KFC Mumbai</span> - Hill Road Bandra 400050, Saint John
                   Baptist Road, near Federal Bank, Mount Mary, Bandra West,
                   Mumbai, Maharashtra, India
@@ -120,8 +124,8 @@ export const Checkout = () => {
                 type="checkbox"
                 name="update"
                 onChange={handlechange}
-              />
-              I want to know about the cool stuff at KFC on Email & SMS (I know
+              /> 
+                I want to know about the cool stuff at KFC on Email & SMS (I know
               I can unsubscribe anytime).
             </div>
           </div>

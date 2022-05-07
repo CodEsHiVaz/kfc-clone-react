@@ -48,7 +48,7 @@ export default function Cart() {
         <div id={styles.cartdiv1}>
           <div id={styles.cartdiv11}>
             <h1>YOUR CART IS EMPTY. LET'S START AN ORDER!</h1>
-            <button id={styles.startbtn}>Start Order</button>
+            <button onClick={()=>navigate("/menu")} id={styles.startbtn}>Start Order</button>
           </div>
           <div>
             {" "}
@@ -125,14 +125,14 @@ export default function Cart() {
           </div>
         </div>
         <div>
-          <div>
+          <div id={styles.still}>
             <h2>STILL HAVE A QUESTION?</h2>
           </div>
           <div id={styles.haveQ}>
             <div>
               <i className="fa-solid fa-phone"></i> Call Us
             </div>
-            <div onClick={() => navigate("/contacts")}>
+            <div onClick={() => navigate("/contactsUs")}>
               <i className="fa-solid fa-envelope"></i> Contact Us
             </div>
           </div>

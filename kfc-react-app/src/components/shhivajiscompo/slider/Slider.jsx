@@ -15,6 +15,8 @@ function Slider(props) {
     return () => clearInterval(interval);
   }, [activeIndex]);
 
+  
+
   return (
     <div className="slider-container">
       <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />

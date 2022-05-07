@@ -4,6 +4,9 @@
     flex-direction: row;
     height: 104px;
     width: 100%;
+    position: fixed;
+    margin-top: -100px;
+    background-color: #fff;
     /* border :1px solid red; */
     /* position: fixed ; */
     /* z-index: auto; */
@@ -54,7 +57,8 @@
     margin-bottom: auto;
     width: 50px;
     height: 50px;
-    padding-left: 10px
+    padding-left: 10px;
+    cursor: pointer;
 }
 .fordigit{
     margin-top: auto;
@@ -75,5 +79,13 @@
     margin-bottom: auto;
     padding-left: 30px;
     padding-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#cartitems{
+    margin-top: -33px;
+    margin-left: 17px;
+    font-size: 13px;
     font-weight: bold;
 }

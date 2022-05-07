@@ -6,7 +6,7 @@
   .slider-container {
     height:100%;
     width: 100%;
-    position: relative;
+    /* position: relative; */
     margin: auto;
     overflow: hidden;
   }
@@ -22,7 +22,7 @@
   .slides {
     height:100%;
     width: 100%;
-    position: relative;
+    /* position: relative; */
   }
   
   .slide-image {
