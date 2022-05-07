@@ -1,0 +1,120 @@
+.main{
+height:370px;
+    width: 100%;
+    /* border : 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    background-color:#202124;
+    margin: auto;
+}
+.footer1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top:110px;
+width: 84%;
+height: 200px;
+/* border: 2px solid rgb(62, 190, 45); */
+margin-left: auto;
+margin-right: auto;
+padding-right: 50px;
+}
+.footer2{
+    width: 90%;
+    height: 50px;
+    /* border: 2px solid rgb(62, 190, 45); */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    }
+    .f2ch{
+        /* border: 2px solid rgb(255, 255, 255); */
+        width: 32%;
+        height: 100%;
+    }
+.f22ch{
+    /* border: 2px solid rgb(255, 255, 255); */
+    width: 32%;
+    height: 100%;
+    color: #dbdbdb;
+    font-size: 13px;
+}
+.p192img{
+    height: 60px;
+    width: 60px;
+    /* padding-right: 40px; */
+}
+.parof8{
+    display: flex;
+    flex-direction: row;
+}
+.uls{
+    display: flex;
+    flex-direction: row;
+margin-top: -20px;
+
+/* gap: 50px; */
+}
+.lis{
+    list-style-type: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing:.5px;
+    margin-bottom: 5px;
+    color: #e3e3e3;
+}
+.ultag{
+    color: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    gap: 8px;
+}
+.findtag{
+    padding: 0px 40px 0px 40px;
+    color: #e3e3e3;
+}
+.fanda{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    gap: 50px;
+   
+}
+
+/* ---------------------------------------- */
+
+.catsec{
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 42%;
+    margin-left: 2%;
+}
+.findstore {
+
+    width: 9%;
+}
+.socialbtns {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    grid-column-gap: 5%;
+    -webkit-column-gap: 5%;
+    column-gap: 5%;
+}
+.link{
+    padding-left: 10px;
+    color: #dbdbdb;
+}
+
+.footerlinks {
+    padding-left: 0px;
+
+    width: 30%;
+    text-align: left;
+
+
+   
+}

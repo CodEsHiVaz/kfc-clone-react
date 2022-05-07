@@ -1,0 +1,79 @@
+
+.navpar{
+    display: flex;
+    flex-direction: row;
+    height: 104px;
+    width: 100%;
+    /* border :1px solid red; */
+    /* position: sticky ; */
+    /* z-index: auto; */
+}
+.bgcl{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 104px;
+    width: 85%;
+    margin: auto;
+    /* background-color: chartreuse; */
+}
+.subpars{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+.logoofkfc{
+    /* vertical-align: middle; */
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 76px;
+    height: 23px;
+    padding-left: 20px;
+    cursor: pointer ;
+}  
+.fornavmenu{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 30px;
+    font-weight: bold;
+    cursor: pointer ;
+}
+.logoac{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+}
+.logocart{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50px;
+    height: 50px;
+    padding-left: 10px
+}
+.fordigit{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.vl {
+    border-left: 1px solid gray;
+    height: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+    
+  }
+  .forsignin{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 30px;
+    padding-right: 20px;
+    font-weight: bold;
+}
