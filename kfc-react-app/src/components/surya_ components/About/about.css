@@ -1,0 +1,103 @@
+.blackstrip{
+    display: flex;
+    background-color: #11181f;
+    width: 100%;
+    height: 80px;
+    color: #888c8e;
+    justify-content: space-evenly;
+}
+.blackstrip>p:hover{
+    color: white;
+    
+}
+.welcomenote{
+    display: flex;
+    
+    width: 100%;
+    height: 350px;
+    color: white;
+}
+.redcolor{
+    background-color: #e4002b;
+    width: 30%;
+}
+.bannerimg{
+    background-image: url(https://about.kfc.co.in/assets/images/D/Heros/Home/primary.jpg);
+    width: 70%;
+}
+.imgcards{
+    
+    margin-top: 20px;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+.imgcards div{
+    
+    width: 20%;
+    border-radius: 15px;
+    text-align:center;
+
+}
+.child {
+    margin-top: 350px;
+    bottom: 10px;
+    width: 100%;
+    font-size: large;
+    color: white;
+  }
+.imgcards div:nth-child(1){
+    background-image: url(https://about.kfc.co.in/assets/images/D/Heros/Home/Tiles/golden-past.jpg);
+    object-fit: cover;
+    background-size:contain;
+}
+.imgcards div:nth-child(2){
+    background-image: url(https://about.kfc.co.in/assets/images/D/Heros/Home/Tiles/kyc.jpg);
+    object-fit: cover;
+    background-size:contain;
+}
+.imgcards div:nth-child(3){
+    background-image: url(https://about.kfc.co.in/assets/images/D/Heros/Home/Tiles/kfc-care.jpg);
+    object-fit: cover;
+    background-size:contain;
+}
+.imgcards div:nth-child(4){
+    background-image: url(https://about.kfc.co.in/assets/images/D/Heros/Home/Tiles/careers.jpg);
+    object-fit: cover;
+    background-size:contain;
+}
+.journey{
+    background-color: #e4002b;
+    width: 100%;
+    height: 500px;
+    color: white;
+    
+}
+.journeytext{
+    width: 90%;
+    
+    margin: auto;
+}
+.demographics{
+    
+    width  : 90%;
+    margin: auto;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.demoinfo{
+   
+    width: 15%;
+    height: 300px;
+    background-color: black;
+    text-align: center;
+    border-radius: 20px;
+}
+.demoinfo>img{
+    
+    margin-top: 40px;
+
+}
