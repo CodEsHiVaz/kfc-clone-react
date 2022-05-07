@@ -1,0 +1,82 @@
+.main{
+    width: 75%;
+    /* border: blue 2px solid ; */
+    margin: auto;
+    /* height: 800px; */
+}
+.forheadrow{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    margin-top: 80px;
+    /* border: 1PX SOLID BLACK; */
+}
+.lineoggray{
+    height:1.5px;
+    margin-top:auto;
+    margin-bottom: auto;
+    width: 70%;
+    border-bottom: 1px solid rgb(176, 176, 176);
+    text-align: left;
+}
+.head{
+    font-family: National 2 Condensed;
+    width: 45%;
+    margin-right: auto;
+    font-size: 38px;
+    text-align: left;
+    
+}
+.cardcontain{
+    width: 100%;
+    /* height: 1000px; */
+    display: grid;
+    grid-template-columns:repeat(4,25%);
+    grid-template-rows:2;
+    gap:20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    /* border: 1px solid red; */
+ 
+}
+.child{
+    background-color:#F8F7F5;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+}
+.cardimages{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.cardimagessp{
+    width: 100%;
+   margin-bottom: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+.cardname{
+    font-weight: bold;
+    font-size:18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: .5px;
+}
+.cardnamesp{
+    font-weight: bold;
+    margin-top:50px;
+    font-size:18px; 
+}
+.divs{
+    display:flex;
+    flex-direction: row;
+   justify-content: center;
+    margin: auto;
+    gap: 10px;
+}
+.arrow{
+    margin-top: 40px;
+    /* margin-bottom: auto; */
+}
