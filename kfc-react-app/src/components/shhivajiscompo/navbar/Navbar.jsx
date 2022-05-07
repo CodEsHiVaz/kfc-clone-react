@@ -34,7 +34,7 @@ const Navbar = () => {
               alt="acc"
             />
           </div>
-          <div className={styles.forsignin}>Sign in</div>
+          <div className={styles.forsignin} onClick={()=>navigate("/Signin")}>Sign in</div>
           <div className={styles.vl}></div>
           <div className={styles.fordigit}>
             <p>₹ {subtotal}</p>

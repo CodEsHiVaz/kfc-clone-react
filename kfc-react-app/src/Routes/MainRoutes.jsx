@@ -8,6 +8,8 @@ import Footer from "../components/shhivajiscompo/footer/Footer"
 import Homecontaint from "../components/shhivajiscompo/homecontaint/Homecontaint";
 import {About} from "../components/surya_ components/About/About"
 import {Deals} from "../components/surya_ components/Deals/Deals"
+import { Signin } from "../components/m-components/Signin";
+import { Otp } from "../components/m-components/Otp";
 
 export const MainRoutes = () => {
   return (<>
@@ -20,6 +22,8 @@ export const MainRoutes = () => {
       <Route path="/about" element={<About />}></Route>
       <Route path="/checkout" element={<Checkout />}></Route>
       <Route path="/ordered" element={<Final_page />}></Route>
+      <Route path="/Signin" element={<Signin/>}></Route>
+      <Route path="/Otp" element={<Otp/>}></Route>
     </Routes>
     <Footer/>
     </>

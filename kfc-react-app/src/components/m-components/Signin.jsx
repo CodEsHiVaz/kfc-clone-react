@@ -1,40 +1,12 @@
-import React, { useState } from "react";
+import React, { useState ,} from "react";
+import { useNavigate } from "react-router-dom";
+
 import styles from "./Signin.module.css";
 
 
 export const Signin =()=>{
+const navigator=useNavigate()
 
-
-//     var userDataBase = JSON.parse(localStorage.getItem("userDataBase")) || [];
-// document.querySelector("#form").addEventListener("submit", formfumction)
-// var Exist=0;
-
-// function formfumction() {
-//         preventDefault();
-//         // taking info from user
-//         var phone = document.querySelector("#phone").value;
-//         if(phone===null){return;}
-        
-//         userDataBase.map(function (elem) {
-//             console.log(elem)
-//             if (phone == elem.Phone) {
-//                 //send for otp verification 
-//                 Exist=1;
-//                 localStorage.setItem("phone",JSON.stringify(phone))
-//                 location.href = "mamaearthotp.html";
-//             }
-//         })
-
-//         //send to create account
-//          if (Exist == 0) {
-//                   localStorage.setItem("phone",JSON.stringify(phone))
-//            //
-//          }
-            
-//     }    
-//      document.querySelector(".last").addEventListener("click",()=>{
-//          window.location.href="/index.html"
-//      })
 const [number,setnumber]=useState("")
 let handlechange=(e)=>{
     setnumber(e.target.value)
@@ -42,7 +14,10 @@ let handlechange=(e)=>{
 
     let sendmecode=()=>{
         console.log(number)
+        localStorage.setItem("number",JSON.stringify(number))
+        navigator("/Otp")
     }
+
 
 return(
     <div id={styles.centre}>
