@@ -1,121 +1,131 @@
-.headdiv{
-    margin: auto 15%;
+.headdiv {
+  margin: auto 15%;
 }
-#heading{
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
+#heading {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
 }
-#heading div{
-    margin-top: 35px;
-}
-
-#Cmain{
-    display: flex;
-    justify-content: space-between;
-    /* border: solid black 1px; */
-    height: 200px;
-    margin: auto 15%;
+#heading div {
+  margin-top: 35px;
 }
 
-.Cleft{
-    /* border: solid black 1px; */
-    /* height: 200px; */
-    
-    width: 60%;
-}
-.Cleft  > div{
-    background-color:#f8f7f5 ;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 20px;
-}
-.Cright{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: fit-content;
-    width: 33%;
-    margin-top: 20px;
-    padding: 20px;
-}
-.pickupdiv{
-    display: flex;
-
-}
-.pickupdiv >div:first-child{
-    width: 150px;
-    margin-left: 75px;
-}
-.pickupdiv >div:last-child {
-display: flex;
-/* border: solid red 1px; */
-justify-content: space-between;
-width:300px;
-margin-top: 20px;
-}
-#store{
-    width: 80%;
-    
-    /* border: solid red 1px; */
-}
-#store p{
-    display: inline-block;
-   
-    
-}
-.pickupopt{
-    display: flex;
-}
-.pickupopt >div:first-child{
-    width: 150px;
-    margin-left: 75px;
+#Cmain {
+  display: flex;
+  justify-content: space-between;
+  /* border: solid black 1px; */
+  height: 200px;
+  margin: auto 15%;
 }
 
-.contactinfo{
-    display: flex; 
+.Cleft {
+  /* border: solid black 1px; */
+  /* height: 200px; */
+
+  width: 60%;
 }
-.contactinfo >div:first-child{
-    width: 150px;
-    margin-left: 75px;
-    margin-right: 20px;
+.Cleft > div {
+  background-color: #f8f7f5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
 }
-.inp{
-    border: none;
-    border-bottom:  solid gray 2px;
-    margin-top: 20px;
-    width: 98%;
-    font-size: 18px;
+.Cright {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: fit-content;
+  width: 33%;
+  margin-top: 20px;
+  padding: 20px;
+}
+.pickupdiv {
+  display: flex;
+}
+.pickupdiv > div:first-child {
+  width: 150px;
+  margin-left: 75px;
+}
+.pickupdiv > div:last-child {
+  display: flex;
+  /* border: solid red 1px; */
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 20px;
+}
+#store {
+  width: 80%;
+
+  /* border: solid red 1px; */
+}
+#store p {
+  display: inline-block;
+  font-size: 12px;
+}
+#store span {
+  font-weight: bold;
+}
+.pickupopt {
+  display: flex;
+}
+.pickupopt > div:first-child {
+  width: 150px;
+  margin-left: 75px;
 }
 
-.paymentdiv{
-    display: flex;
+.contactinfo {
+  display: flex;
 }
-.paymentdiv >div:first-child{
-    width: 150px;
-    margin-left: 75px;
-    margin-right: 20px;
+.contactinfo > div:first-child {
+  width: 150px;
+  margin-left: 75px;
+  margin-right: 20px;
 }
-.paymentdiv >div:last-child{
-    cursor: pointer;
-}
-
-.priceLine{
-    display: flex;
-    justify-content: space-between;
-}
-#paybtn{
-    display: flex;
-    justify-content: space-between;
-    background-color: #e4002b;
-    color: white;
-    cursor: pointer;
-    padding: 15px 50px;
-    border-radius: 20px;
-}
-#paybtn p{
-    margin: 0px
+.inp {
+  border: none;
+  border-bottom: solid gray 2px;
+  outline: none;
+  margin-top: 20px;
+  width: 98%;
+  font-size: 18px;
 }
 
-.addpM{
-    text-decoration: underline;
-    /* cursor: pointer; */
+.paymentdiv {
+  display: flex;
+}
+.paymentdiv > div:first-child {
+  width: 150px;
+  margin-left: 75px;
+  margin-right: 20px;
+}
+.paymentdiv > div:last-child {
+  cursor: pointer;
+}
+
+.priceLine {
+  display: flex;
+  justify-content: space-between;
+}
+#paybtn1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e4002b;
+  color: white;
+  cursor: pointer;
+  padding: 5px 50px;
+  border-radius: 20px;
+}
+#paybtn2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0c8d0;
+  color: white;
+  cursor: not-allowed;
+  padding: 5px 50px;
+  border-radius: 20px;
+}
+#paybtn p {
+  margin: 0px;
+}
+
+.addpM {
+  text-decoration: underline;
 }

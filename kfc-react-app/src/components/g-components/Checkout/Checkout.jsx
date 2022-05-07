@@ -3,14 +3,21 @@ import { PaymentMethod } from "../paymentMethod/PaymentMethod";
 import styles from "./checkout.module.css";
 import { Popup } from "../paymentMethod/Popup";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export const Checkout = () => {
-  
   const [payMth, setpayMth] = useState(false);
   const [formdata, setformdata] = useState({});
   const [payType, setpayType] = useState("");
   const [showbtn, setshowbtn] = useState(false);
   const navigate = useNavigate();
+  const data = useSelector((state) => state.cartdata.cartdata);
+  let subtotal = data.reduce((acc, elem) => {
+    return (acc += elem.price * elem.qty);
+  }, 0);
+  let items = data.reduce((acc, elem) => {
+    return (acc += elem.qty);
+  }, 0);
 
   const handlechange = (e) => {
     let key = e.target.name;
@@ -21,13 +28,13 @@ export const Checkout = () => {
     console.log(payType, formdata);
   };
   useEffect(() => {
-    if (payType && formdata) {
+    if (payType && formdata.full_name && formdata.email && formdata.phone_no) {
       console.log("show button true");
       setshowbtn(true);
     }
   }, [payMth]);
 
-  const handleCheckout = () => navigate("/payment");
+  const handleCheckout = () => navigate("/ordered");
 
   return (
     <>
@@ -52,7 +59,12 @@ export const Checkout = () => {
             <div>
               <div id={styles.store}>
                 <i className="fa-solid fa-location-dot"></i>
-                <p>Store name</p>
+                <p>
+                  {" "}
+                  <span>KFC Mumbai</span> - Hill Road Bandra 400050, Saint John
+                  Baptist Road, near Federal Bank, Mount Mary, Bandra West,
+                  Mumbai, Maharashtra, India
+                </p>
                 <div>
                   <i className="fa-solid fa-clock"></i> ASAP
                 </div>
@@ -74,7 +86,7 @@ export const Checkout = () => {
             <div>
               <div>
                 <h1>contact info</h1>
-                <button>Sign in</button>
+                <button onClick={() => navigate("/login")}>Sign in</button>
               </div>
             </div>
             <div>
@@ -126,10 +138,10 @@ export const Checkout = () => {
           </div>
         </div>
         <div className={styles.Cright}>
-          <h1>No of items</h1>
+          <h1>{items} items</h1>
           <div className={styles.priceLine}>
             <p>Subtotal</p>
-            <p>₹199.05</p>
+            <p>₹{subtotal}</p>
           </div>
           <div className={styles.priceLine}>
             <p>GST</p>
@@ -140,14 +152,14 @@ export const Checkout = () => {
             <p>₹6</p>
           </div>
           {showbtn ? (
-            <div id={styles.paybtn} onClick={handleCheckout}>
+            <div id={styles.paybtn1} onClick={handleCheckout}>
               <p>Continue to Payment</p>
-              <p>₹201</p>
+              <p>{subtotal + 9 + 6}</p>
             </div>
           ) : (
-            <div id={styles.paybtn}>
+            <div id={styles.paybtn2}>
               <p>Continue to Payment</p>
-              <p>₹201</p>
+              <p>₹{subtotal + 9 + 6}</p>
             </div>
           )}
         </div>

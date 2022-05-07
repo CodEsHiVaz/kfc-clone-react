@@ -1,40 +1,36 @@
 import React, { useEffect, useState } from "react";
 import styles from "./cart.module.css";
-import {CartCard} from "../cartcard/CartCard"
+import { CartCard } from "../cartcard/CartCard";
 import { useNavigate } from "react-router-dom";
-
-const dummyData = [
-  {
-    image:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000110.jpg",
-    title:"Strips & Popcorn Treat",
-    price:366,
-    id:"gali1"
-  },
-  {
-    image:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000110.jpg",
-    title:"dummy",
-    price:199,
-    id:"gali2"
-  }
-]
+import { useDispatch, useSelector } from "react-redux";
+import { RemoveAll } from "../../../redux/guddu/cartRedux/CartAction";
 
 export default function Cart() {
   const [cartData, setcartData] = useState([]);
   const navigate = useNavigate();
- 
-  useEffect(()=>{
-    
-    setcartData(dummyData) 
- 
-  },[cartData]);
+  const dispatch = useDispatch();
+
+  const data = useSelector((state) => state.cartdata.cartdata);
+  const items = cartData.reduce((acc, elem) => {
+    return (acc += elem.qty);
+  }, 0);
+
+  useEffect(() => {
+    setcartData(data);
+  }, [cartData, dispatch, data]);
 
   let subtotal;
-  if(cartData.length==0){
-    subtotal=0;
-  }else{
-    subtotal = cartData.reduce((acc,elem)=>{return acc+=elem.price},0)
+  if (cartData.length == 0) {
+    subtotal = 0;
+  } else {
+    subtotal = cartData.reduce((acc, elem) => {
+      return (acc += elem.price * elem.qty);
+    }, 0);
   }
-  
+
+  const removeAll = () => {
+    dispatch(RemoveAll());
+  };
 
   return (
     <>
@@ -66,19 +62,25 @@ export default function Cart() {
         <div id={styles.cartdiv2}>
           <div id={styles.items}>
             {/* **********************************maping data ************* */}
-            {cartData.map((elem)=><CartCard key={elem.id} {...elem}/>)}
-            
+            {cartData.map((elem) => (
+              <CartCard key={elem.id} {...elem} />
+            ))}
+
             <div id={styles.R_all}>
-              <div onClick={()=>setcartData("")}>Remove All</div>
-              <div onClick={()=>navigate("/menu")}>Add More Menu</div>
+              <div onClick={removeAll}>Remove All</div>
+              <div onClick={() => navigate("/menu")}>Add More Menu</div>
             </div>
           </div>
           <div id={styles.subtotal}>
-            <h1>{cartData.length}- ITEMS</h1>
-            <div>Offer Apply promo code</div>
+            <h1>{items}- ITEMS</h1>
+            <div id={styles.offer}>
+              {" "}
+              <img src="https://online.kfc.co.in/static/media/Offers_Coupon_Icon.72b94c41.svg" />{" "}
+              Offer Apply promo code
+            </div>
             <div className="">
               <div className={styles.singlediv}>
-                <p>subtotal</p>
+                <p>Subtotal</p>
                 <p>₹ {subtotal}</p>
               </div>
               <div className={styles.singlediv}>
@@ -93,9 +95,9 @@ export default function Cart() {
               <input type="checkbox" /> Donate ₹ 5.00 Tick to Add Hope.
             </div>
 
-            <div id={styles.checkoutbtn} onClick={()=>navigate("/checkout")}>
+            <div id={styles.checkoutbtn} onClick={() => navigate("/checkout")}>
               <p>Check Out</p>
-              <p>{subtotal+19}</p>
+              <p>₹{subtotal + 19}</p>
             </div>
           </div>
         </div>
@@ -123,17 +125,15 @@ export default function Cart() {
           </div>
         </div>
         <div>
-          {" "}
           <div>
             <h2>STILL HAVE A QUESTION?</h2>
           </div>
           <div id={styles.haveQ}>
             <div>
-              {" "}
-              <i class="fa-solid fa-phone"></i> Call Us
+              <i className="fa-solid fa-phone"></i> Call Us
             </div>
-            <div>
-              <i class="fa-solid fa-envelope"></i> Contact Us
+            <div onClick={() => navigate("/contacts")}>
+              <i className="fa-solid fa-envelope"></i> Contact Us
             </div>
           </div>
         </div>

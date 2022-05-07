@@ -3,6 +3,6 @@ import { cartReducer } from "./guddu/cartRedux/CartReducer"
 
 
 
-const rootReducer = combineReducers(cartReducer)
+const rootReducer = combineReducers({cartdata:cartReducer})
 
 export const store = createstore(rootReducer)
