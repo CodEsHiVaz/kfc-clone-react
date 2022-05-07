@@ -1,21 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "../navbar/Navbar.module.css";
-// import { Link } from "react-router-dom";
+import Secblack from "../Secblack/Secblack"
 const Navbar = () => {
-  return (
+  const navigate = useNavigate();
+  return (<>
     <div className={styles.navpar}>
       <div className={styles.bgcl}>
-        <div className={styles.subpars}>
-          <img
+        <div  className={styles.subpars}>
+          <img onClick={()=>navigate("/")}
             className={styles.logoofkfc}
             src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg"
             alt="ddd"
           />
-          <div className={styles.fornavmenu}>
+          <div onClick={()=>navigate("/menu")} className={styles.fornavmenu}>
             {/* <Link to="">Menu</Link> */}
             Menu
           </div>
-          <div className={styles.fornavmenu}>Deals</div>
+          <div onClick={()=>navigate("/deals")} className={styles.fornavmenu}>Deals</div>
         </div>
         <div className={styles.subpars}>
           <div className={styles.logoac}>
@@ -38,6 +40,8 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+    <Secblack/>
+    </>
   );
 };
 
