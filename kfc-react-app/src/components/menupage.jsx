@@ -2,35 +2,34 @@ import React from "react"
 import data from '../db.json'
 import CartButton from "./menucart"
 import GroceryItem from "./menuitem"
-import Navbar from "./shhivajiscompo/navbar/Navbar"
+
 import Sidebar from "./sidebar"
 
+console.log(data)
 const GroceryDetails = ()=>{
-// console.log(data)
+console.log(data)
 
     return(
         
-    
-<>
+   <>
+  
 
-     <Navbar/>
+     <Sidebar/>
         
- <Sidebar/>
-      
         <div className="container">
-          
+         
            {data.map((item)=>(
           <div>
-              <GroceryItem item={item}/>
+              <GroceryItem {...item}/>
               <CartButton/>
 
           </div>
            ))}
                
         </div>
-
-
-</>
+   
+   
+   </>
         
     )
 }
