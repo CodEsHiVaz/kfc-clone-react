@@ -1,4 +1,4 @@
-import {legacy_createStore as createstore,applyMiddleware,combineReducers,compose} from "redux"
+import {legacy_createStore as createstore,combineReducers} from "redux"
 import { cartReducer } from "./guddu/cartRedux/CartReducer"
 
 

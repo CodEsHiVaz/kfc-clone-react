@@ -5,14 +5,21 @@ const GroceryItem = ({item}) => {
 <div className="grocery">
   <div className="upper">
     <p>{discount}</p>
-    <img src={imgURL} alt="" />
+    <img style={{
+  width: "100%",
+  height: "100%"}} src={imgURL} alt="" />
 
   </div>
   <p>{title}</p>
   <div className="price-div">
-    <p>{mrp}</p>
-    <p>{sellingPrice}</p>
+    <div style={{display:"flex", flexDirection:"column", marginTop:"-20px"}}>
+
+      <p>{mrp}</p>
+    
 <p>{detail}</p>
+
+
+    </div>
   </div>
 </div>
 
