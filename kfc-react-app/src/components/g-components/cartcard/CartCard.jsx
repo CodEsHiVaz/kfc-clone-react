@@ -29,7 +29,7 @@ export const CartCard = (props) => {
   return (
     <div id={styles.frame}>
       <div>
-        <img src={props.imageURL} alt="product image" />
+        <img src={props.imgURL} alt="product image" />
       </div>
       <div id={styles.centerDiv}>
         <p>{props.title}</p>

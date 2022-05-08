@@ -1,4 +1,6 @@
+import { localdata,savedata } from "../../../utils/localStorage";
 import {
+  ADD_TO_CART,
   DEC_QTY,
   GET_CART_DATA,
   INC_QTY,
@@ -7,24 +9,7 @@ import {
 } from "./CartAction";
 
 export const initstate = {
-  cartdata: [
-    {
-      imageURL:
-        "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000110.jpg",
-      title: "Strips & Popcorn Treat",
-      mrp: 366,
-      qty: 1,
-      id: "gali1",
-    },
-    {
-      imageURL:
-        "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000110.jpg",
-      title: "dummy",
-      mrp: 199,
-      qty: 1,
-      id: "gali2",
-    },
-  ],
+  cartdata: localdata("cart")||[]
 };
 export const cartReducer = (state = initstate, { type, payload }) => {
   switch (type) {
@@ -57,6 +42,14 @@ export const cartReducer = (state = initstate, { type, payload }) => {
       return {
         ...state,
         cartdata: [],
+      };
+    }
+    case ADD_TO_CART: {
+      const updateCart = [...state.cartdata,payload];
+      savedata("cart",updateCart)
+      return {
+        ...state,
+        cartdata: updateCart,
       };
     }
     default:

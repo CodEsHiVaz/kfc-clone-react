@@ -6,7 +6,8 @@ import Secblack from "../Secblack/Secblack"
 const Navbar = () => { 
 
   
-  const data = useSelector((state) => state.cartdata.cartdata);
+  const data = useSelector((state) => state.cartdata.cartdata)
+  // const data=[];
   const items = data.reduce((acc, elem) => {
     return (acc += elem.qty);
   }, 0);

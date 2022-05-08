@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 
 export const Otp =()=>{
+    const navigate = useNavigate();
 
 
    let phone=JSON.parse(localStorage.getItem("number"))
@@ -43,7 +44,7 @@ return(
         <div className={styles.differentNumber}>Resend the Code</div>
 
         <div class={styles.skipBtnDiv}>
-                <button class={styles.skipBtn} id="skipBtn" >Submit</button>
+                <button onClick={()=>navigate("/")} class={styles.skipBtn} id="skipBtn" >Submit</button>
             </div> 
 
 

@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router";
 import styles from "./Directtodeal.module.css";
 const Directtodeal = () => {
+  const navigate = useNavigate()
   return (
     <div className={styles.main}>
       <div style={{ width: "30%" }}></div>
@@ -16,7 +18,7 @@ const Directtodeal = () => {
             <h4 className={styles.h2}>OFFERS & DEALS</h4>
           </div>
 
-          <p className={styles.cardnamesp}>View All Menu </p>
+          <p onClick={()=>navigate("/deals")} className={styles.cardnamesp}>View All Menu </p>
         </div>
         <div className={styles.card}>
           <div className={styles.carcomp}>
@@ -51,7 +53,7 @@ const Directtodeal = () => {
             />
             <h1> 1 PC Free chicken</h1>
             <div className={styles.btpar}>
-              <p>View Details</p>
+              <p >View Details</p>
               <button className={styles.btnbtn}>Redeem</button>
             </div>
           </div>

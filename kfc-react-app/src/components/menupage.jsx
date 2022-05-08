@@ -6,7 +6,7 @@ import GroceryItem from "./menuitem";
 import Sidebar from "./sidebar";
 
 const GroceryDetails = () => {
-  console.log(data);
+//   console.log(data);
 
   return (
     <>

@@ -1,16 +1,29 @@
 import React from "react";
 import { savedata } from "../utils/localStorage";
+import {useDispatch} from 'react-redux'
+import { addToCart, DecQty, IncQty } from "../redux/guddu/cartRedux/CartAction";
 
 const CartButton = (item) => {
   const [count, setCount] = React.useState(0);
+  const dispatch = useDispatch();
+  
 
-  const handleCount = (value) => {
-    setCount(count + value);
-  };
+  const handleInc =()=>{
+    setCount(count + 1);
+    console.log(item.item.id)
+    dispatch(IncQty(item.item.id));
+  }
+  const handleDec =()=>{
+    
+    if (count > 1) {
+      setCount(count -1);
+      dispatch(DecQty(item.item.id));
+    }
+  }
   const handleBtn = () => {
     setCount(1);
     console.log(item.item)
-    // savedata("cart",item.item)
+    dispatch(addToCart(item.item))
   };
 
   return (
@@ -31,7 +44,7 @@ const CartButton = (item) => {
                   width: "45px",
                   borderRadius: "50%",
                 }}
-                onClick={() => handleCount(-1)}
+                onClick={handleDec}
               >
                 -
               </button>
@@ -44,7 +57,7 @@ const CartButton = (item) => {
                   width: "45px",
                   borderRadius: "50%",
                 }}
-                onClick={() => handleCount(1)}
+                onClick={handleInc}
               >
                 +
               </button>
