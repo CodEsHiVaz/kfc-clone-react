@@ -24,7 +24,7 @@ export default function Cart() {
     subtotal = 0;
   } else {
     subtotal = cartData.reduce((acc, elem) => {
-      return (acc += elem.price * elem.qty);
+      return (acc += elem.mrp * elem.qty);
     }, 0);
   }
 
@@ -74,7 +74,6 @@ export default function Cart() {
           <div id={styles.subtotal}>
             <h1>{items}- ITEMS</h1>
             <div id={styles.offer}>
-              {" "}
               <img src="https://online.kfc.co.in/static/media/Offers_Coupon_Icon.72b94c41.svg" />{" "}
               Offer Apply promo code
             </div>

@@ -1,36 +1,25 @@
-import React from "react"
-import data from '../db.json'
-import CartButton from "./menucart"
-import GroceryItem from "./menuitem"
+import React from "react";
+import data from "../db.json";
+import CartButton from "./menucart";
+import GroceryItem from "./menuitem";
 
-import Sidebar from "./sidebar"
+import Sidebar from "./sidebar";
 
-console.log(data)
-const GroceryDetails = ()=>{
-console.log(data)
+const GroceryDetails = () => {
+  console.log(data);
 
-    return(
-        
-   <>
-  
+  return (
+    <>
+      <Sidebar />
 
-     <Sidebar/>
-        
-        <div className="container">
-         
-           {data.map((item)=>(
+      <div className="container">
+        {data.map((item) => (
           <div>
-              <GroceryItem {...item}/>
-              <CartButton/>
-
+            <GroceryItem key={item.id} {...item} />
           </div>
-           ))}
-               
-        </div>
-   
-   
-   </>
-        
-    )
-}
-export default GroceryDetails
+        ))}
+      </div>
+    </>
+  );
+};
+export default GroceryDetails;

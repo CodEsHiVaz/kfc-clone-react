@@ -11,7 +11,7 @@ const Navbar = () => {
     return (acc += elem.qty);
   }, 0);
   const subtotal = data.reduce((acc, elem) => {
-    return (acc += elem.price * elem.qty);
+    return (acc += elem.mrp * elem.qty);
   }, 0);
   const navigate = useNavigate();
   return (<>

@@ -29,7 +29,7 @@ export const CartCard = (props) => {
   return (
     <div id={styles.frame}>
       <div>
-        <img src={props.image} alt="product image" />
+        <img src={props.imageURL} alt="product image" />
       </div>
       <div id={styles.centerDiv}>
         <p>{props.title}</p>
@@ -43,7 +43,7 @@ export const CartCard = (props) => {
         <button className={styles.btn} onClick={qtyInc}>
           +
         </button>
-        <p>{`₹${props.price * qty}`}</p>
+        <p>{`₹${props.mrp * qty}`}</p>
       </div>
     </div>
   );
