@@ -11,8 +11,11 @@ const GroceryDetails = () => {
   return (
     <>
       <Sidebar />
-
+      <h1  style={{ marginLeft:"400px", marginTop:"50px" }}   >MATCH DAY SPECIALS</h1>
       <div className="container">
+
+    
+
         {data.map((item) => (
           <div>
             <GroceryItem key={item.id} {...item} />
