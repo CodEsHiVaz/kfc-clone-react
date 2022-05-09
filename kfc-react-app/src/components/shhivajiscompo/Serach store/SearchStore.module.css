@@ -35,3 +35,11 @@
     padding-left: 50px;
     font-size: 18px;
 }
+
+.btnAdd{
+background-color:black;
+color:white;
+ height:40px;
+  border-radius: 20px;
+   padding:0px 20px;
+}
