@@ -89,7 +89,7 @@ export const Checkout = () => {
           <div className={styles.contactinfo}>
             <div>
               <div>
-                <h1>contact info</h1>
+                <h1>Contact Info</h1>
                 <button onClick={() => navigate("/login")}>Sign in</button>
               </div>
             </div>
@@ -131,7 +131,7 @@ export const Checkout = () => {
           </div>
           <div className={styles.paymentdiv}>
             <div>
-              <h1>PEYMENT</h1>
+              <h1>Payment</h1>
             </div>
             <div onClick={() => setpayMth(true)}>
               <p className={styles.addpM}>Add payment method</p>
