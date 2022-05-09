@@ -7,14 +7,16 @@ import { useNavigate } from "react-router-dom";
 export const Otp =()=>{
     const navigate = useNavigate();
 
-
+ localStorage.setItem("signed", 0)
    let phone=JSON.parse(localStorage.getItem("number"))
    const [sec,setsec]=useState(180)
    const navigator=useNavigate()
    let timer= setInterval(()=>{
     if(sec==0){
         setsec(180)
+        
         navigator("/Signin")
+
     }  
     setsec(sec-1)
    },1000)
@@ -24,6 +26,11 @@ export const Otp =()=>{
 
     
    },[sec])
+
+   const handleOtp =()=>{
+    localStorage.setItem("signed", 1)
+    navigate("/")
+   }
 
 return(
     <div id={styles.centre}>
@@ -44,7 +51,7 @@ return(
         <div className={styles.differentNumber}>Resend the Code</div>
 
         <div class={styles.skipBtnDiv}>
-                <button onClick={()=>navigate("/")} class={styles.skipBtn} id="skipBtn" >Submit</button>
+                <button onClick={handleOtp} class={styles.skipBtn} id="skipBtn" >Submit</button>
             </div> 
 
 

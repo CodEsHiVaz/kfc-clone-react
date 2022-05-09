@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import styles from "../navbar/Navbar.module.css";
 import Secblack from "../Secblack/Secblack"
 const Navbar = () => { 
-
+  const [SignStatus1,setSignStatus1]= useState(0)
   
   const data = useSelector((state) => state.cartdata.cartdata)
   // const data=[];
@@ -15,6 +15,12 @@ const Navbar = () => {
     return (acc += elem.mrp * elem.qty);
   }, 0);
   const navigate = useNavigate();
+
+  useEffect(()=>{
+let SignStatus = localStorage.getItem("signed")||0
+setSignStatus1(SignStatus)
+  })
+
   return (<>
     <div className={styles.navpar}>
       <div className={styles.bgcl}>
@@ -37,7 +43,7 @@ const Navbar = () => {
               alt="acc"
             />
           </div>
-          <div className={styles.forsignin} onClick={()=>navigate("/Signin")}>Sign in</div>
+          <div className={styles.forsignin} onClick={()=>navigate("/Signin")}>{SignStatus1 ? "Account":"Sign in"}</div>
           <div className={styles.vl}></div>
           <div className={styles.fordigit}>
             <p>₹ {subtotal}</p>

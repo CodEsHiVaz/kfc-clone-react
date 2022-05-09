@@ -15,7 +15,7 @@ export const Checkout = () => {
   const navigate = useNavigate();
   const data = useSelector((state) => state.cartdata.cartdata);
   let subtotal = data.reduce((acc, elem) => {
-    return (acc += elem.price * elem.qty);
+    return (acc += elem.mrp * elem.qty);
   }, 0);
   let items = data.reduce((acc, elem) => {
     return (acc += elem.qty);

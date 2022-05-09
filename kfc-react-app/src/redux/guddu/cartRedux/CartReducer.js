@@ -56,22 +56,3 @@ export const cartReducer = (state = initstate, { type, payload }) => {
       return state;
   }
 };
-
-// cartdata: [
-//     {
-//       image:
-//         "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000110.jpg",
-//       title: "Strips & Popcorn Treat",
-//       price: 366,
-//       qty: 1,
-//       id: "gali1",
-//     },
-//     {
-//       image:
-//         "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/L-8000110.jpg",
-//       title: "dummy",
-//       price: 199,
-//       qty: 1,
-//       id: "gali2",
-//     },
-//   ],
